@@ -37,13 +37,3 @@
     </form>
 </div>
 
-<script>
-    tinymce.init({
-        selector: '#content', // Sélectionne le textarea avec l'ID 'content'
-        height: 500, // Hauteur de l'éditeur
-        menubar: false, // Masquer la barre de menu
-        plugins: 'advlist autolink lists link image charmap print preview anchor searchreplace visualblocks code fullscreen insertdatetime media table paste code help wordcount', // Plugins activés
-        toolbar: 'undo redo | formatselect | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | help', // Barre d'outils
-        content_css: '//www.tiny.cloud/css/codepen.min.css' // Style par défaut
-    });
-</script>
