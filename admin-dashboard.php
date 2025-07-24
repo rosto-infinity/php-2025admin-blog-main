@@ -1,7 +1,13 @@
 <?php
-
 session_start();
 require_once 'database/database.php';
+
+// Verifiez les permissions d'accès a la page
+if($_SESSION['role'] !== 'admin') {
+    header('Location: index.php');
+    exit();
+}
+
 
 $pageTitle = 'Page  d\'accueil canada';
 

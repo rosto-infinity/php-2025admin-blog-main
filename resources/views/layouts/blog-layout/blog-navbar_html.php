@@ -41,7 +41,7 @@
       <div class="profile" >
                 <img src="/publicAll/images/profil.png" alt="Photo de profil">
                 <div class="profile-link">
-                    <a href="/user-dashboard.php"><i class='bx bxs-user-circle icon'></i> Dashboard</a>
+                    <a href="/index.php"><i class='bx bxs-user-circle icon'></i> Dashboard</a>
                     <a href="/logout.php"><i class='bx bxs-log-out-circle icon'></i> Déconnexion</a>
                 </div>
        </div>
