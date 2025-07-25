@@ -88,8 +88,8 @@ if(isset($_POST['add-article'])) {
 
     $title = clean_input($_POST['title']);
     $slug =createSlug($title);
-        echo $slug;
-        die();
+        // echo $slug;
+        // die();
 
     $introduction = clean_input($_POST['introduction']);
     $content = clean_input($_POST['content']);
@@ -102,7 +102,16 @@ if(isset($_POST['add-article'])) {
     }else{
 
         //Verification de l'unicité du slug
+        $query = $pdo->prepare("SELECT COUNT(*) FROM articles WHERE slug = :slug");
 
+        $query->execute(['slug' => $slug]);
+
+        $count = $query->fetchColumn();
+        // echo $count;
+        //  die();
+        if($count > 0) {
+            $error = "Un article avec ce slug existe déjà.";
+        }else{   
         //Insertion de l'article dans la base de données
         $query = $pdo->prepare("INSERT INTO articles (title, slug, introduction, content, created_at) VALUES (:title, :slug, :introduction, :content,  NOW())");
 
@@ -112,7 +121,7 @@ if(isset($_POST['add-article'])) {
             'introduction' => $introduction,
             'content' => $content
         ]);
-
+        }
 
     }
 }
