@@ -101,7 +101,7 @@ if(isset($_POST['add-article'])) {
         $error = "Tous les champs sont obligatoires.";
     }else{
 
-        //Verification de l'unicité du slug
+        //--Verification de l'unicité du slug
         $query = $pdo->prepare("SELECT COUNT(*) FROM articles WHERE slug = :slug");
 
         $query->execute(['slug' => $slug]);
