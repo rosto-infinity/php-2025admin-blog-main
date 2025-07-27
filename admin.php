@@ -16,7 +16,7 @@ function clean_input($data) {
 function createSlug($title) {
     $slug =removeAccents($title);
     $slug= strtolower( str_replace(' ', '-',$slug));
-    $slug = preg_replace('/[^a-z0-9-]/', '', $slug); // Supprimer les caractères non alphanumériques
+    $slug = preg_replace('/[^a-z0-9-]/', '', $slug); // ---Supprimer les caractères non alphanumériques
     $slug = preg_replace('/-+/', '-', $slug); // Remplacer les tirets multiples par un seul
 
     return trim($slug, '-'); // Supprimer les tirets en début et fin de chaîne
