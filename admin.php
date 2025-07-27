@@ -112,7 +112,7 @@ if(isset($_POST['add-article'])) {
         if($count > 0) {
             $error = "Un article avec ce slug existe déjà.";
         }else{   
-        //Insertion de l'article dans la base de données
+        //--Insertion de l'article dans la base de données
         $query = $pdo->prepare("INSERT INTO articles (title, slug, introduction, content, created_at) VALUES (:title, :slug, :introduction, :content,  NOW())");
 
         $query->execute([
