@@ -87,14 +87,34 @@ function removeAccents($string)
 if(isset($_POST['add-article'])) {
 
     $title = clean_input($_POST['title']);
-    $slug =createSlug($title);
-        // echo $slug;
-        // die();
-
+    $slug =createSlug($title); 
     $introduction = clean_input($_POST['introduction']);
     $content = clean_input($_POST['content']);
+    $imagePath =''; // Initialiser la variable pour l'image
 
     // Gestion de l'image
+    if(isset($_FILES['image']) && $_FILES['image']['error'] === UPLOAD_ERR_OK) {
+       $uploadDir = 'storage/articles/';
+       if(!is_dir($uploadDir)) {
+            mkdir($uploadDir, 0777, true); // Créer le répertoire s'il n'existe pas
+        }
+
+        // Vérifier si le fichier est une image
+        $extension = strtolower(pathinfo($_FILES['image']['name'], PATHINFO_EXTENSION));
+        $allowedExtensions = ['jpg', 'jpeg', 'png', 'gif' , 'webp'];
+
+        if(in_array($extension, $allowedExtensions)) {
+            $imagePath = $uploadDir . uniqid('article_') . '.' . $extension; // Générer un nom de fichier unique
+
+            move_uploaded_file($_FILES['image']['tmp_name'], $imagePath); // Déplacer le fichier téléchargé
+        } else {
+            $error = "Le fichier téléchargé n'est pas une image valide.";
+        }
+
+    } else {
+        $error = "Erreur lors du téléchargement de l'image.";
+  
+    }
 
     //validation des champs
     if(empty($title) || empty($introduction) || empty($content)) {
@@ -113,13 +133,14 @@ if(isset($_POST['add-article'])) {
             $error = "Un article avec ce slug existe déjà.";
         }else{   
         //--Insertion de l'article dans la base de données
-        $query = $pdo->prepare("INSERT INTO articles (title, slug, introduction, content, created_at) VALUES (:title, :slug, :introduction, :content,  NOW())");
+        $query = $pdo->prepare("INSERT INTO articles (title, slug, introduction, content, image, created_at) VALUES (:title, :slug, :introduction, :content, :image,  NOW())");
 
         $query->execute([
             'title' => $title,
             'slug' => $slug,
             'introduction' => $introduction,
-            'content' => $content
+            'content' => $content,
+            'image' => $imagePath
         ]);
         }
 

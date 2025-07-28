@@ -79,7 +79,7 @@ button:hover {
        <?php foreach ($articles as $article): ?>
             <tr>
                 <td>
-                   image 
+                    <img src="<?= $article['image'] ?>" alt="<?= $article['title'] ?>" style="width: 100px; height: auto;"> 
                 </td>
                 <td> <?= $article['title'] ?> </td>
                 <td>  <?= $article['introduction'] ?> </td>
