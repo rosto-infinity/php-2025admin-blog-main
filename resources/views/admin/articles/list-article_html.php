@@ -40,7 +40,7 @@ button:hover {
 </style>
 
 <h1>Nos articles</h1>
-<p>Il y a 555555articles</p>
+<p>Il y a <?= count($articles) ?> articles</p>
 
 <!-- Affichage des erreurs et succès -->
 <?php if (!empty($errors)): ?>
@@ -76,14 +76,14 @@ button:hover {
         </tr>
     </thead>
     <tbody>
-       
+       <?php foreach ($articles as $article): ?>
             <tr>
                 <td>
-                    
+                   image 
                 </td>
-                <td>01</td>
-                <td>02</td>
-                <td>03</td>
+                <td> <?= $article['title'] ?> </td>
+                <td>  <?= $article['introduction'] ?> </td>
+                <td> <?= $article['created_at'] ?>3</td>
                 <td style="display: flex; justify-content: center; align-items: center;">
                     <a href="#">
                         <i class='bx bx-show'></i>Show
@@ -96,6 +96,6 @@ button:hover {
                     </a>
                 </td>
             </tr>
-        
+        <?php endforeach; ?>
     </tbody>
 </table>
