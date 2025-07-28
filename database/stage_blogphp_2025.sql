@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:3306
--- Généré le : jeu. 24 juil. 2025 à 13:47
+-- Généré le : lun. 28 juil. 2025 à 13:40
 -- Version du serveur : 8.0.30
 -- Version de PHP : 8.3.20
 
@@ -43,7 +43,13 @@ CREATE TABLE `articles` (
 --
 
 INSERT INTO `articles` (`id`, `image`, `title`, `slug`, `introduction`, `content`, `created_at`, `updated_at`) VALUES
-(1, NULL, 'Excepteur rerum quis', 'Excepteur rerum quis', 'In molestiae est qua', 'Perferendis id quis', '2025-07-24 14:24:00', NULL);
+(1, NULL, 'Excepteur rerum quis', 'Excepteur rerum quis', 'In molestiae est qua', 'Perferendis id quis', '2025-07-24 14:24:00', NULL),
+(2, NULL, 'Recusandae Pariatur', 'Recusandae Pariatur', 'Quis aut quo est qui', 'Et aperiam nemo magn', '2025-07-24 15:04:13', NULL),
+(3, NULL, 'Minim esse eveniet', 'minim-esse-eveniet', 'Commodi maxime deser', 'Soluta excepteur qui', '2025-07-24 15:30:10', NULL),
+(5, NULL, 'ffffffffffffffffffftryyyyyyyyy', 'ffffffffffffffffffftryyyyyyyyy', 'fhhhhhhhhhhhhh', 'hffffngjh', '2025-07-24 15:31:50', NULL),
+(6, NULL, 'lele', 'lele', 'lllliool', 'loloollolloolo', '2025-07-24 15:33:42', NULL),
+(11, NULL, 'Consequuntur velit s', 'consequuntur-velit-s', 'Sit corrupti volupt', 'Omnis nisi mollitia', '2025-07-28 13:22:42', NULL),
+(12, NULL, 'Dolore eum sit dolo', 'dolore-eum-sit-dolo', 'Eius voluptatibus om', 'Quaerat consectetur', '2025-07-28 14:05:40', NULL);
 
 -- --------------------------------------------------------
 
@@ -94,7 +100,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT pour la table `articles`
 --
 ALTER TABLE `articles`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT pour la table `users`
