@@ -9,8 +9,8 @@
 
 				<a href="#"><i class='bx bxs-inbox icon' ></i> Blog <i class='bx bx-chevron-right icon-right' ></i></a>
 				<ul class="side-dropdown">
+					<li><a href="list-article.php">Articles</a></li>
 					<li><a href="admin.php">Add Article</a></li>
-					<li><a href="#">Badges</a></li>
 					<li><a href="#">Breadcrumbs</a></li>
 					<li><a href="#">Button</a></li>
 				</ul>
