@@ -1,0 +1,7 @@
+ID,Service,"Start Date & Time",Duration,Customer,"Customer Phone","Customer Email",Agent,"Agent Phone","Agent Email",Status,Price,"Booked On"
+8,"Boho braids","July 30, 08:00am",45,"Client Waffo",+237691584819,rostodev@gmail.com,"waffo rostand",+237691584819,rostodev@gmail.com,Approved,$350.00,"Jul 28, 2025 4:55 am"
+7,"Boho braids","July 29, 09:00am",45,"Client Waffo",+237691584819,rostodev@gmail.com,"waffo rostand",+237691584819,rostodev@gmail.com,Cancelled,$350.00,"Jul 28, 2025 4:43 am"
+6,"Knotless ","July 31, 10:30am",45,"Client Waffo",+237691584819,rostodev@gmail.com,"waffo rostand",+237691584819,rostodev@gmail.com,Approved,$190.00,"Jul 28, 2025 1:12 am"
+5,"Boho braids","July 30, 03:00pm",45,"Cuntomer Name Cunstomer last name",+237691584819,rostoinfinity0@gmail.com,"waffo rostand",+237691584819,rostodev@gmail.com,Approved,$60.00,"Jul 27, 2025 4:24 am"
+3,"Senegalese twist","July 30, 12:30pm",50,"Client Waffo",+237691584819,rostodev@gmail.com,"waffo rostand",+237691584819,rostodev@gmail.com,Approved,$250.00,"Jul 27, 2025 2:04 am"
+2,"Boho braids","July 30, 10:30am",45,"Client Waffo",+237691584819,rostodev@gmail.com,"waffo rostand",+237691584819,rostodev@gmail.com,Approved,$60.00,"Jul 27, 2025 12:36 am"
