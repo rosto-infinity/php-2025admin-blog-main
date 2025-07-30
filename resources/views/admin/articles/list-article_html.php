@@ -83,7 +83,7 @@ button:hover {
                 </td>
                 <td> <?= $article['title'] ?> </td>
                 <td>  <?= $article['introduction'] ?> </td>
-                <td> <?= $article['created_at'] ?>3</td>
+                <td> <?= $article['created_at'] ?></td>
                 <td style="display: flex; justify-content: center; align-items: center;">
                     <a href="#">
                         <i class='bx bx-show'></i>Show

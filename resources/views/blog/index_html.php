@@ -22,153 +22,33 @@
         <h2>Derniers Articles</h2>
         <div class="articles-grid">
            <!-- Article 1 -->
+            <?php foreach ($articles as $article): ?>
+            
             <div class="article-card">
-                <img src="/publicAll/images/img2.png" alt="Image en avant de l'article 1" class="article-image">
+                <img src="<?= $article['image'] ?>" alt="<?= $article['title'] ?>" class="article-image">
                 <div class="article-content">
-                    <h3 class="article-title">Titre de l'article 1</h3>
+                    <h3 class="article-title"><?= $article['title'] ?></h3>
                     <div class="article-meta">
                         <span class="article-category">
                             <i class='bx bx-category-alt'></i> Catégorie 1
                         </span>
                         <span class="article-date">
-                            <i class='bx bx-calendar'></i> 13 juillet 2025
+                            <i class='bx bx-calendar'></i> <?= $article['created_at'] ?>
                         </span>
                     </div>
-                    <p class="article-excerpt">Ceci est un extrait de l'article 1. Il donne un aperçu du contenu principal.</p>
+                    <p class="article-excerpt"><?= $article['introduction'] ?></p>
                     <div class="article-footer">
                         <span class="article-comments">
                             <i class='bx bx-comment-dots'></i> 5 commentaires
                         </span>
-                        <a href="#" class="read-more">
+                        <a href="article.php?id=<?= $article['id'] ?>" class="read-more">
                             Lire<i class='bx bx-chevron-right'></i>
                         </a>
                     </div>
                 </div>
             </div>
-           
-         
-           <!-- Article 1 -->
-            <div class="article-card">
-                <img src="/publicAll/images/img1.png" alt="Image en avant de l'article 1" class="article-image">
-                <div class="article-content">
-                    <h3 class="article-title">Titre de l'article 1</h3>
-                    <div class="article-meta">
-                        <span class="article-category">
-                            <i class='bx bx-category-alt'></i> Catégorie 1
-                        </span>
-                        <span class="article-date">
-                            <i class='bx bx-calendar'></i> 13 juillet 2025
-                        </span>
-                    </div>
-                    <p class="article-excerpt">Ceci est un extrait de l'article 1. Il donne un aperçu du contenu principal.</p>
-                    <div class="article-footer">
-                        <span class="article-comments">
-                            <i class='bx bx-comment-dots'></i> 5 commentaires
-                        </span>
-                        <a href="#" class="read-more">
-                            Lire<i class='bx bx-chevron-right'></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-           <!-- Article 1 -->
-            <div class="article-card">
-                <img src="/publicAll/images/img3.png" alt="Image en avant de l'article 1" class="article-image">
-                <div class="article-content">
-                    <h3 class="article-title">Titre de l'article 1</h3>
-                    <div class="article-meta">
-                        <span class="article-category">
-                            <i class='bx bx-category-alt'></i> Catégorie 1
-                        </span>
-                        <span class="article-date">
-                            <i class='bx bx-calendar'></i> 13 juillet 2025
-                        </span>
-                    </div>
-                    <p class="article-excerpt">Ceci est un extrait de l'article 1. Il donne un aperçu du contenu principal.</p>
-                    <div class="article-footer">
-                        <span class="article-comments">
-                            <i class='bx bx-comment-dots'></i> 5 commentaires
-                        </span>
-                        <a href="#" class="read-more">
-                            Lire<i class='bx bx-chevron-right'></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-           <!-- Article 1 -->
-            <div class="article-card">
-                <img src="/publicAll/images/img1.png" alt="Image en avant de l'article 1" class="article-image">
-                <div class="article-content">
-                    <h3 class="article-title">Titre de l'article 1</h3>
-                    <div class="article-meta">
-                        <span class="article-category">
-                            <i class='bx bx-category-alt'></i> Catégorie 1
-                        </span>
-                        <span class="article-date">
-                            <i class='bx bx-calendar'></i> 13 juillet 2025
-                        </span>
-                    </div>
-                    <p class="article-excerpt">Ceci est un extrait de l'article 1. Il donne un aperçu du contenu principal.</p>
-                    <div class="article-footer">
-                        <span class="article-comments">
-                            <i class='bx bx-comment-dots'></i> 5 commentaires
-                        </span>
-                        <a href="#" class="read-more">
-                            Lire<i class='bx bx-chevron-right'></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-           <!-- Article 1 -->
-            <div class="article-card">
-                <img src="/publicAll/images/img1.png" alt="Image en avant de l'article 1" class="article-image">
-                <div class="article-content">
-                    <h3 class="article-title">Titre de l'article 1</h3>
-                    <div class="article-meta">
-                        <span class="article-category">
-                            <i class='bx bx-category-alt'></i> Catégorie 1
-                        </span>
-                        <span class="article-date">
-                            <i class='bx bx-calendar'></i> 13 juillet 2025
-                        </span>
-                    </div>
-                    <p class="article-excerpt">Ceci est un extrait de l'article 1. Il donne un aperçu du contenu principal.</p>
-                    <div class="article-footer">
-                        <span class="article-comments">
-                            <i class='bx bx-comment-dots'></i> 5 commentaires
-                        </span>
-                        <a href="#" class="read-more">
-                            Lire<i class='bx bx-chevron-right'></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-           <!-- Article 1 -->
-            <div class="article-card">
-                <img src="/publicAll/images/img1.png" alt="Image en avant de l'article 1" class="article-image">
-                <div class="article-content">
-                    <h3 class="article-title">Titre de l'article 1</h3>
-                    <div class="article-meta">
-                        <span class="article-category">
-                            <i class='bx bx-category-alt'></i> Catégorie 1
-                        </span>
-                        <span class="article-date">
-                            <i class='bx bx-calendar'></i> 13 juillet 2025
-                        </span>
-                    </div>
-                    <p class="article-excerpt">Ceci est un extrait de l'article 1. Il donne un aperçu du contenu principal.</p>
-                    <div class="article-footer">
-                        <span class="article-comments">
-                            <i class='bx bx-comment-dots'></i> 5 commentaires
-                        </span>
-                        <a href="#" class="read-more">
-                            Lire<i class='bx bx-chevron-right'></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-          
 
+            <?php endforeach; ?>
         </div>
     </section>
 
