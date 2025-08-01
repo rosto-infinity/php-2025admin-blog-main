@@ -39,7 +39,7 @@ $pageTitle = "Page d'un article";
 // --cDebut de tampon de la page de sortie
 ob_start();
 
-// Recupere la view(layout) de la page d'accueil
+// --Recupere la view(layout) de la page d'accueil
 require_once 'resources/views/blog/show_html.php';
 
 // Récupérer le contenu du tampon de la page d'accueil
