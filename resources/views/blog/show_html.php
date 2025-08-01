@@ -320,7 +320,7 @@
 
 
         <?php if (isset($_SESSION['auth'])) : ?>
-            <!-- Formulaire de commentaire -->
+            <!-- --Formulaire de commentaire -->
             <form action="save-comment.php" method="POST" class="comment-form">
                 <h3 class="comment-form-heading">Vous voulez réagir ? N'hésitez pas !</h3>
                
