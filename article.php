@@ -27,7 +27,7 @@ $comments = $query->fetchAll();
 
 
 
-// Récupérer les statistiques
+// --Récupérer les statistiques
 $commentsCount = $pdo->query("SELECT COUNT(*) AS count FROM comments")->fetch()['count'];
 $articlesCount = $pdo->query("SELECT COUNT(*) AS count FROM articles")->fetch()['count'];
 
