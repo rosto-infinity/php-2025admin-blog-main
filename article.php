@@ -36,7 +36,7 @@ $articlesCount = $pdo->query("SELECT COUNT(*) AS count FROM articles")->fetch()[
 
 $pageTitle = "Page d'un article";
 
-// Debut de tampon de la page de sortie
+// --cDebut de tampon de la page de sortie
 ob_start();
 
 // Recupere la view(layout) de la page d'accueil
