@@ -14,7 +14,7 @@ $query->execute(compact('article_id'));
 $article = $query->fetch();
 
 
-// $sql2 ="SELECT * FROM comments ";
+// --$sql2 ="SELECT * FROM comments ";
 
 $sql = "SELECT comments.*, users.username
         FROM comments 
