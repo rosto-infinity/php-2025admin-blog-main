@@ -11,7 +11,7 @@ if ($article_id === NULL || $article_id === false) {
     $error['article_id'] = "Le parametre id  est invalide.";
 }
 
-// Récupère l'article correspondant à l'identifiant
+// -Récupère l'article correspondant à l'identifiant
 $sql = "SELECT * FROM articles WHERE id =:article_id";
 $query = $pdo->prepare($sql);
 $query->execute(compact('article_id'));
