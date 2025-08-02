@@ -1,7 +1,7 @@
 <?php
 session_start(); // -Démarre la session PHP pour gérer les utilisateurs connectés
 
-require_once 'database/database.php'; // Inclut la connexion à la base de données
+require_once 'database/database.php'; // -Inclut la connexion à la base de données
 
 $error = []; // Tableau pour stocker les messages d'erreur
 
