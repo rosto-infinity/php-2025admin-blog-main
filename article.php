@@ -32,7 +32,7 @@ $commentsCount = $pdo->query("SELECT COUNT(*) AS count FROM comments")->fetch()[
 // -Récupère le nombre total d'articles dans la base
 $articlesCount = $pdo->query("SELECT COUNT(*) AS count FROM articles")->fetch()['count'];
 
-// Définit le titre de la page
+// -Définit le titre de la page
 $pageTitle = "Page d'un article";
 
 // Démarre la temporisation de sortie pour capturer le contenu de la vue
