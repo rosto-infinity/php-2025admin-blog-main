@@ -17,7 +17,7 @@ $query = $pdo->prepare($sql);
 $query->execute(compact('article_id'));
 $article = $query->fetch();
 
-// Récupère les commentaires de l'article avec le nom d'utilisateur de chaque auteur
+// --Récupère les commentaires de l'article avec le nom d'utilisateur de chaque auteur
 $sql = "SELECT comments.*, users.username
         FROM comments 
         JOIN users ON comments.user_id = users.id 
