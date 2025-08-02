@@ -29,7 +29,7 @@ $comments = $query->fetchAll();
 // -Récupère le nombre total de commentaires dans la base
 $commentsCount = $pdo->query("SELECT COUNT(*) AS count FROM comments")->fetch()['count'];
 
-// Récupère le nombre total d'articles dans la base
+// -Récupère le nombre total d'articles dans la base
 $articlesCount = $pdo->query("SELECT COUNT(*) AS count FROM articles")->fetch()['count'];
 
 // Définit le titre de la page
