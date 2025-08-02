@@ -26,7 +26,7 @@ $query = $pdo->prepare($sql);
 $query->execute(['article_id' => $article_id]);
 $comments = $query->fetchAll();
 
-// Récupère le nombre total de commentaires dans la base
+// -Récupère le nombre total de commentaires dans la base
 $commentsCount = $pdo->query("SELECT COUNT(*) AS count FROM comments")->fetch()['count'];
 
 // Récupère le nombre total d'articles dans la base
