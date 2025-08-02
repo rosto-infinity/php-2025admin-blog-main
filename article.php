@@ -5,7 +5,7 @@ require_once 'database/database.php'; // -Inclut la connexion à la base de donn
 
 $error = []; // Tableau pour stocker les messages d'erreur
 
-// Récupère l'identifiant de l'article depuis l'URL et le valide comme entier
+// -Récupère l'identifiant de l'article depuis l'URL et le valide comme entier
 $article_id = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
 if ($article_id === NULL || $article_id === false) {
     $error['article_id'] = "Le parametre id  est invalide.";
