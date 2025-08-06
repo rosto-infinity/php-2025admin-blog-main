@@ -116,7 +116,7 @@ if(isset($_POST['add-article'])) {
   
     }
 
-    //validation des champs
+    //-validation des champs
     if(empty($title) || empty($introduction) || empty($content)) {
         $error = "Tous les champs sont obligatoires.";
     }else{
