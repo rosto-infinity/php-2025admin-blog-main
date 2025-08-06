@@ -99,7 +99,7 @@ if(isset($_POST['add-article'])) {
             mkdir($uploadDir, 0777, true); // Créer le répertoire s'il n'existe pas
         }
 
-        // Vérifier si le fichier est une image
+        // -Vérifier si le fichier est une image
         $extension = strtolower(pathinfo($_FILES['image']['name'], PATHINFO_EXTENSION));
         $allowedExtensions = ['jpg', 'jpeg', 'png', 'gif' , 'webp'];
 
