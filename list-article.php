@@ -6,7 +6,7 @@ if($_SESSION['role'] !== 'admin') {
     header('Location: index.php');
     exit();
 }
-// Recupere les articles de la base de données
+// -Recupere les articles de la base de données
 $query = "SELECT * FROM articles";
 $query =$pdo->prepare($query);
 $query->execute();
