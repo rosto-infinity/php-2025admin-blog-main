@@ -16,7 +16,7 @@ $articles = $query->fetchAll(PDO::FETCH_ASSOC);
 
 $pageTitle = "Page admin list Article";
 
-// Debut de tampon de la page de sortie
+// -Debut de tampon de la page de sortie
 ob_start();
 
 // -Recupere la view(layout) de la page d'accueil
