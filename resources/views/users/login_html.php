@@ -22,7 +22,7 @@
                     </div>
                     <button type="submit" name="login">Se connecter</button>
                     
-                    <!-- Liens d'authentification -->
+                    <!-- -Liens d'authentification -->
                     <div class="auth-links">
                         <span  class="auth-link" style="color:black">
                             <i class='bx bx-log-in'></i>Connectez-vous ou
