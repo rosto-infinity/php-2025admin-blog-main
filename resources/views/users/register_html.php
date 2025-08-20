@@ -1,6 +1,6 @@
 
     <div class="container-part">
-        <!-- Colonne de gauche : Grande image avec superposition -->
+        <!-- --Colonne de gauche : Grande image avec superposition -->
         <div class="image-column">
             <div class="image-overlay"></div>
             <img src="/publicAll/images/img1.png" alt="Image d'arrière-plan">
