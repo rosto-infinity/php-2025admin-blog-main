@@ -6,7 +6,7 @@
             <img src="/publicAll/images/img1.png" alt="Image d'arrière-plan">
         </div>
 
-        <!-- Colonne de droite : Formulaire d'inscription -->
+        <!-- -Colonne de droite : Formulaire d'inscription -->
         <div class="form-container">
             <form action="#" method="POST">
                 <div class="form-group">
